@@ -1,1 +1,1 @@
-# Go-Women.github.io
+# Simple website for the Go Women team
