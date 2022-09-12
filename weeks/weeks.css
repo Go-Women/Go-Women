@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  background-color: darkslategrey;
+  color: whitesmoke;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'head head head head'
+    'time four data arts'
+    'time four plan plan'
+    'foot foot foot foot';
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto 1fr auto;
+  gap: 1.75rem;
+  height: 100vh;
+  padding: 2rem;
+}
+
+.g-header {
+  grid-area: head;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.h-weektitle {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.h-back {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.h-forward {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.h-back>a,
+.h-forward>a {
+  font-size: 1.2rem;
+  color: inherit;
+}
+
+.col-header {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: underline dotted;
+}
+
+.g-timesheet {
+  grid-area: time;
+  align-items: center;
+}
+
+table {
+  width: 100%;
+}
+
+table,
+th,
+td {
+  border: 1px solid;
+  border-collapse: collapse;
+  padding: 0.25rem;
+}
+
+tr>td:first-child {
+  font-weight: bold;
+}
+
+.four-up tr>td:last-child {
+  width: 100%;
+}
+
+.timesheet-graph>img {
+  margin-top: 1.75rem;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.g-fourup {
+  grid-area: four;
+}
+
+.g-data {
+  grid-area: data;
+}
+
+.g-artifacts {
+  grid-area: arts;
+}
+
+.artifact-list>li>a {
+  color: inherit;
+}
+
+.g-agenda {
+  grid-area: plan;
+}
+
+.g-footer {
+  grid-area: foot;
+}
+
+.not-applicable {
+  text-align: center;
+  margin-top: 2rem;
+  font-style: italic;
+  color: lightgray;
+}

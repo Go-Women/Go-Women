@@ -1,0 +1,235 @@
+<html>
+
+<head>
+  <title>Team Go Women - Week 3</title>
+  <link rel="stylesheet" href="weeks.css">
+</head>
+
+<body>
+  <div class="grid-container">
+    <div class="g-header">
+      <div class="h-back">
+        <a href="./week-2.html">&larr; Week 2</a>
+        <a href="../index.html">&lArr; Home</a>
+      </div>
+      <div class="h-weektitle">
+        Week 3 - 2022/09/04
+      </div>
+      <div class="h-forward">
+        <a href="#">Week 4 &rarr;</a>
+      </div>
+    </div>
+    <div class="g-timesheet">
+      <div class="col-header">Timesheet</div>
+      <table>
+        <tr>
+          <th>Member</th>
+          <th>Hours</th>
+        </tr>
+        <tr>
+          <td>Celeste Gambardella</td>
+          <td>8.5</td>
+        </tr>
+        <tr>
+          <td>Daniel Kamvakis</td>
+          <td>6</td>
+        </tr>
+        <tr>
+          <td>Giovanni Melchionne</td>
+          <td>7</td>
+        </tr>
+        <tr>
+          <td>Kelsey Donovan</td>
+          <td>7</td>
+        </tr>
+        <tr>
+          <td>May Wu</td>
+          <td>7.5</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Team Total</td>
+          <td>36</td>
+        </tr>
+        <tr>
+          <td>Team Running Total</td>
+          <td>63.5</td>
+        </tr>
+      </table>
+      <div class="timesheet-graph">
+        <img src="./assets/timesheets/week-3.png" alt="Timesheet Graph" />
+      </div>
+    </div>
+    <div class="g-fourup">
+      <div class="col-header">4-Up</div>
+      <table class="four-up">
+        <tr>
+          <td>Progress</td>
+          <td>
+            <ul>
+              <li>Celeste
+                <ul>
+                  <li>Github Actions research</li>
+                  <li>Created team shared Google Calendar</li>
+                  <li>Created timesheet document</li>
+                  <li>Workflow Diagram - current system</li>
+                  <li>Workflow Diagram - proposed</li>
+                </ul>
+              </li>
+              <li>Dan
+                <ul>
+                  <li>Rough portal mockup</li>
+                </ul>
+              </li>
+              <li>Giovanni
+                <ul>
+                  <li>Designed and implemented a basic website for the team</li>
+                </ul>
+              </li>
+              <li>Kelsey
+                <ul>
+                  <li>Process and Project Metrics</li>
+                </ul>
+              </li>
+              <li>May
+                <ul>
+                  <li>Implemented Trello for project assignments</li>
+                  <li>Created Project Plan document and wrote up initial Project Synopsis and Project Goal</li>
+                  <li>Made initial design for database and assisted with workflow diagram</li>
+                  <li>Created initial methodoly document</li>
+                </ul>
+              </li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>Risks</td>
+          <td>
+            <ul>
+              <li>Database design - lack of knowledge on setup/structure by team</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>Plans</td>
+          <td>
+            <ul>
+              <li>Continue documentation of process and methodology</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>Needs</td>
+          <td>
+            <ul>
+              <li>Database structure information</li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="g-data">
+      <div class="col-header">Data and Metrics</div>
+      <div class="not-applicable">None this week.</div>
+    </div>
+    <div class="g-artifacts">
+      <div class="col-header">Artifacts</div>
+      <ul class="artifact-list">
+        <li><a href="#" target="_blank">Workflow Diagram v0 (Current)</a></li>
+        <li><a href="#" target="_blank">Workflow Diagram v1 (Proposed)</a></li>
+      </ul>
+    </div>
+    <div class="g-agenda">
+      <div class="col-header">This Week's Agenda</div>
+      <ol type="1">
+        <li>4-Up</li>
+        <li>Discussion & Questions
+          <ol type="a">
+            <li>Discuss database
+              <ol type="i">
+                <li>What does the current system look like? (Organization)</li>
+                <li>Access to the database to see the current structure?</li>
+              </ol>
+            </li>
+            <li>Scope
+              <ol type="i">
+                <li>Automation over the entire workflow or focus on just the matching process?</li>
+              </ol>
+            </li>
+            <li>Nominee Application
+              <ol type="i">
+                <li>Is replacing the current forms a possibility?</li>
+                <li>Are different roles within the organization needed? If so, what kind of access/edit rights would
+                  they need?<br />
+                  <b>Proposed User Types</b>:
+                  <ol type="1">
+                    <li>Admin
+                      <ol type="a">
+                        <li>Can see everything</li>
+                        <li>Override and make manual edits</li>
+                      </ol>
+                    </li>
+                    <li>Moderator
+                      <ol type="a">
+                        <li>Can see everything</li>
+                        <li>Read-only (can see but not edit)</li>
+                      </ol>
+                    </li>
+                    <li>Judge
+                      <ol type="a">
+                        <li>Can only see dashboard with their nominees to be reviewed</li>
+                      </ol>
+                    </li>
+                    <li>User
+                      <ol type="a">
+                        <li>Don't need login access</li>
+                        <li>Access to the public form to nominate people</li>
+                      </ol>
+                    </li>
+                  </ol>
+                </li>
+              </ol>
+            </li>
+            <li>Stakeholder analysis
+              <ol type="i">
+                <li>Age range and technical level of judges & people making nominations</li>
+              </ol>
+            </li>
+            <li>Judges
+              <ol type="i">
+                <li>Mentioned 8 categories judges are placed into, what are they?
+                  <ol type="1">
+                    <li>Arts</li>
+                    <li>Athletics</li>
+                    <li>Government</li>
+                    <li>Humanity</li>
+                    <li>STEM</li>
+                  </ol>
+                </li>
+                <li>Time frames - It was mentioned that it takes 8 months to complete the entire process
+                  <ol type="1">
+                    <li>How long does the matching process take?</li>
+                    <li>How long does it take judges to review their applications?</li>
+                  </ol>
+                </li>
+              </ol>
+            </li>
+          </ol>
+        </li>
+        <li>Next Meeting
+          <ol type="a">
+            <li>Tuesday, September 20, 2022, 5:00 PM EST</li>
+          </ol>
+        </li>
+      </ol>
+    </div>
+    <div class="g-footer">
+      &copy; 2022 Team Go Women
+    </div>
+  </div>
+</body>
+
+</html>
