@@ -1,0 +1,243 @@
+<html>
+
+<head>
+  <title>Team Go Women - Week 20</title>
+  <link rel="stylesheet" href="weeks.css">
+</head>
+
+<body>
+  <div class="grid-container">
+    <div class="g-header">
+      <div class="h-back">
+        <a href="./week-20.html">&larr; Week 20</a>
+        <a href="../index.html">&lArr; Home</a>
+      </div>
+      <div class="h-weektitle">
+        Week 19 - 2023/02/21
+      </div>
+      <div class="h-forward">
+        <a href="./week-21.html">Week 21 &rarr;</a>
+      </div>
+    </div>
+    <div class="g-timesheet">
+      <div class="col-header">Timesheet</div>
+      <table>
+        <tr>
+          <th>Member</th>
+          <th>Hours</th>
+        </tr>
+        <tr>
+          <td>Celeste Gambardella</td>
+          <td>12.5</td>
+        </tr>
+        <tr>
+          <td>Daniel Kamvakis</td>
+          <td>8.0</td>
+        </tr>
+        <tr>
+          <td>Giovanni Melchionne</td>
+          <td>13.0</td>
+        </tr>
+        <tr>
+          <td>Kelsey Donovan</td>
+          <td>9.2</td>
+        </tr>
+        <tr>
+          <td>May Wu</td>
+          <td>10.2</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Team Total</td>
+          <td>52.9</td>
+        </tr>
+        <tr>
+          <td>Team Running Total</td>
+          <td>623.3</td>
+        </tr>
+      </table>
+      <div class="timesheet-graph">
+        <img src="./assets/timesheets/week-20.png" alt="Timesheet Graph" />
+      </div>
+    </div>
+    <div class="g-fourup">
+      <div class="col-header">4-Up</div>
+      <table class="four-up">
+        <tr>
+          <td>Progress</td>
+          <td>
+            <ul>
+              <li>Celeste
+                <ul>
+                  <li>Backend
+                    <ul>
+                      <li>Data support with <code>GET</code> calls
+                        <ul>
+                          <li>Judges</li>
+                          <li>Nominations</li>
+                          <li>Nominees</li>
+                        </ul>
+                      </li>
+                      <li>Updated some mock data to support additional database fields</li>
+                      <li>Helper calls for formatting data for the frontend</li>
+                      <li><code>PATCH</code> call for judges
+                        <ul>
+                          <li>For editing of judges</li>
+                        </ul>
+                      </li>
+                      <li><code>POST</code> calls for nominations
+                        <ul>
+                          <li>For submitting new nominations</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>Frontend
+                    <ul>
+                      <li>Judge category multi-select</li>
+                      <li>Sorting nominations by date</li>
+                      <li>Adding data visuals</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>Dan
+                <ul>
+                  <li>Updated mock data to test same-name merging</li>
+                  <li>Demo prep</li>
+                </ul>
+              </li>
+              <li>Giovanni
+                <ul>
+                  <li>Nominee page</li>
+                  <li>Nominations page
+                    <ul>
+                      <li>Accept/Reject/Merge panel</li>
+                      <li>Various other changes and fixes</li>
+                    </ul>
+                  </li>
+                  <li>Update team website</li>
+                </ul>
+              </li>
+              <li>Kelsey
+                <ul>
+                  <li>Working on matching implementation in the backend</li>
+                </ul>
+              </li>
+              <li>May
+                <ul>
+                  <li>Created matching page</li>
+                  <li>Made changes to the judge page to show the capacity of a judge</li>
+                </ul>
+              </li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>Risks</td>
+          <td>
+            <li>Midterms</li>
+          </td>
+        </tr>
+        <tr>
+          <td>Plans</td>
+          <td>
+            <ul>
+              <li>Backend Development
+                <ul>
+                  <li>AWS preperation for IT meeting</li>
+                  <li>Matching workflow</li>
+                  <li>Backend connections for accept/reject/merge</li>
+                </ul>
+              </li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>Needs</td>
+          <td>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="g-data">
+      <div class="col-header">Data and Metrics</div>
+      <!-- <div class="not-applicable">None this week.</div> -->
+      <ul class="artifact-list">
+        <li>Completed User Stories: 15</li>
+        <li>User Stories In-Progress: 5</li>
+        <li>Documentation Coverage %: TBA</li>
+      </ul>
+    </div>
+    <div class="g-artifacts">
+      <div class="col-header">Artifacts</div>
+      <!-- <ul class="artifact-list">
+        <li>
+          <a href="https://docs.google.com/presentation/d/1tKqrOxGczeA547Fd90HEzTzAl5cz3d0W0er_nQq0ijg/edit?usp=sharing"
+            target="_blank">Matching Workflow Wireframe PowerPoint</a>
+        </li>
+        <li>
+          <a href="https://drive.google.com/file/d/1FK7dhtlYU3XHUAKcst7Uw4s09Uim8h8g/view?usp=share_link"
+            target="_blank">Nomination Accept/Reject/Combine Mockup</a>
+        </li>
+      </ul> -->
+      <!-- <div class="not-applicable">None this week.</div> -->
+    </div>
+    <div class="g-agenda">
+      <div class="col-header">This Week's Agenda</div>
+      <ol type="1">
+        <li>Explanation on how the backend and frontend communicate
+          <ol type="a">
+            <li><code>GET</code>
+              <ul>
+                <li>Used to retrieve data from the database.</li>
+                <li>A request is sent with a query, and data matching the query is returned from the database.</li>
+              </ul>
+            </li>
+            <li><code>POST</code>
+              <ul>
+                <li>Used to create new data in the database.</li>
+                <li>A request is sent containing the data to be added to the database.</li>
+              </ul>
+            </li>
+            <li><code>PATCH</code>
+              <ul>
+                <li>Used to update existing data in the database</li>
+                <li>A request is sent identifying the data to be replaced and what to replace it with.</li>
+              </ul>
+            </li>
+            <li><code>DELETE</code>
+              <ul>
+                <li>Used to remove data from the database.</li>
+                <li>We will not be using this, but "hiding" data instead.
+                  <ul>
+                    <li>Deleting data is bad practice.</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ol>
+        </li>
+        <li>4-Up</li>
+        <li>Discussion & Questions
+          <ol type="a">
+            <li><strong>Demo #2</strong></li>
+          </ol>
+        </li>
+        <li>Next Meeting
+          <ol type="a">
+            <li>Thursday, March 2, 2023, 5:00 PM EST</li>
+          </ol>
+        </li>
+      </ol>
+    </div>
+    <div class="g-footer">
+      &copy; 2022 Team Go Women
+    </div>
+  </div>
+</body>
+
+</html>
